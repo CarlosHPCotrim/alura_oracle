@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+
+    }
+
+    function mostraDiferenca(frase) {
+        document.write(frase);
+        pulaLinha()
+    }
+
+function mostraGeracoes(frase) {
+        document.write(frase);
+        pulaLinha()
+    }
+
+
+
+    var anoAtual = 2020;
+    var anoInicial = 1500;
+    var mediaCasalFilhos = 28;
+    
+
+
+   
+    exibeTitulo("O problema das gerações");
+    exibeParagrafo("Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante.");
+    exibeParagrafo("Desde 1500 até o ano atual, quantas gerações se passaram?");
+    exibeParagrafo("Estamos agora no ano de " + anoAtual + ", e o ano inicial é " + anoInicial + ".");
+    exibeParagrafo("Agora vamos calcular quantos anos se passaram desde o ano inicial.")
+    mostraDiferenca("Nossa diferença entre o ano atual (" + anoAtual + ") e o ano inicial (" + anoInicial + ") é de " + (anoAtual - anoInicial) + " anos.");
+    exibeParagrafo("O número de gerações será obtido com a divisão entre o número de anos ocorridos e a média que os casais tem filhos.");
+    mostraGeracoes("O número de gerações, ou seja (" + (anoAtual - anoInicial) + "/" + mediaCasalFilhos + ")  , aproximado, desde o início é de " + Math.round((anoAtual - anoInicial) / mediaCasalFilhos) + ".");
+    exibeParagrafo ("Data original: 28/10/2020.");
+
+
+
+
+</script>
